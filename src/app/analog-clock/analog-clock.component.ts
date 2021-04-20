@@ -33,9 +33,9 @@ export class AnalogClockComponent implements AfterViewInit, OnDestroy {
     const mDeg = date.getMinutes() * 6 + date.getSeconds() * (360 / 3600);
     const sDeg = date.getSeconds() * 6;
     console.log(sDeg);
-    this.hourHand.nativeElement.setAttribute('style', 'transform: rotate(' + hDeg + 'deg\')');
-    this.minHand.nativeElement.setAttribute('style', 'transform: rotate(' + mDeg + 'deg\')');
-    this.secondHand.nativeElement.setAttribute('style', 'transform: rotate(' + sDeg + 'deg\')');
+    this.hourHand.nativeElement.setAttribute('style', 'transform: rotate(' + hDeg + 'deg)');
+    this.minHand.nativeElement.setAttribute('style', 'transform: rotate(' + mDeg + 'deg)');
+    this.secondHand.nativeElement.setAttribute('style', 'transform: rotate(' + sDeg + 'deg)');
   }
 
 }
