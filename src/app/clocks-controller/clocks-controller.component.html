@@ -1,0 +1,9 @@
+<form (ngSubmit)="synchronize()" [formGroup]="clockForm" xmlns="http://www.w3.org/1999/html">
+  <label>Hour</label>
+  <input type="number" formControlName="hours"/>
+  <label>Minutes</label>
+  <input type="number" formControlName="minutes"/>
+  <label>Seconds</label>
+  <input type="number" formControlName="seconds"/>
+  <button type="submit" title="Synchronize">Synchronize</button>
+</form>
